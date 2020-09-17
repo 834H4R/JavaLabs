@@ -58,7 +58,7 @@ public class Tasks
         else if(firstTwo > lastTwo)
             System.out.println("Нет, произведение первых двух цифр числа больше чем произведение последних двух");
         else
-            System.out.print("Произведение первых двух чисел равно произведению последних двух");
+            System.out.println("Произведение первых двух чисел равно произведению последних двух");
     }
     public void Process4()
     {
@@ -83,19 +83,19 @@ public class Tasks
             System.out.print("В этом месяце меньше дней");
             return;
         }
-        System.out.println("Выбраная дата: " + (month) + "." + day + "\nПредыдущим днем было:");
+        System.out.print("Выбраная дата: " + (month) + "." + day + "\nПредыдущим днем было:");
         if(day != 1)
         {
             System.out.print(month + "." + (day-1));
         }
         else
         {
-            System.out.print((month-1) + "." + daysInMont[month-1]);
+            System.out.println((month-1) + "." + daysInMont[month-1]);
         }
     }
     public void Pract()
     {
-        System.out.print("Задано натуральное число n. Правда ли, что число а попадается в нем чаще чем число b?\n" +
+        System.out.println("Практическое задание: Задано натуральное число n. Правда ли, что число а попадается в нем чаще чем число b?\n" +
                 "Введите число n(более 2х цифр):");
         String number = in.next();
         System.out.print("Введите число a:");
